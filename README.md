@@ -26,6 +26,8 @@ Users should be able to:
 
 ## My process
 
+Just some info: I didnt use Gatsby Plugin image due to the bad resolution of responsive design by the helper function with-art-direction. Instead I used a styled div which worked better for me. For the slider I used bootstrap react carousel which I can really recommend, its easy to style and you dont need much additional Java Script
+
 ### Built with
 
 - CSS custom properties

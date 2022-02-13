@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+  background-image: url('../images/background_width_1440px.png');
+  background-repeat: no-repeat;
+}
+
+.carousel-indicators {display:none;}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/icon-prev.svg');
+    background-color: white;
+    border-radius: 100% 0% 0% 100%;
+    font-size: 16px;
+  }
+
+.carousel-control-next-icon {
+    background-image: url('../images/icon-next.svg');
+    background-color: white;
+    border-radius: 0% 100% 100% 0%;
+  }
+.carousel-control-prev{
+    top: 95%;
+    left:48%;
+    width: 40px;
+  }
+.carousel-control-next{
+    top: 95%;
+    right: 47%;
+    width: 40px;
+  }
+
+.carousel-caption{
+  display:inline-flex;
+  width: 50vw;
+  height: 60vh;
+  font-family: 'Inter', sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: 0;
+  text-align: center;
+}
+
+.maintext{
+  display: block;
+  width:100%;
+  position:absolute;
+  font-size: 32px;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+  text-align: left;
+}
+
+.nameofperson{
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.occupation{
+  font-size: 25px;
+  color: hsl(240, 18%, 77%);
+  font-weight: 500;
+}
+.tanya {
+  content: '';
+  width: 540px;
+  height: 540px;
+  display: block;
+  background-image: url('../images/image-tanya.jpg');
+  border-radius: 5px;
+  position: relative;
+  margin-left: 45%;
+  margin-top: 8%;
+  box-shadow: -10px 10px 20px 5px hsl(240, 18%, 77%);
+}
+
+.john {
+  content: '';
+  width: 540px;
+  height: 540px;
+  display: block;
+  background-image: url('../images/image-john.jpg');
+  border-radius: 5px;
+  position: relative;
+  margin-left: 45%;
+  margin-top: 8%;
+  box-shadow: -10px 10px 20px 5px hsl(240, 18%, 77%);
+}
+
+/*large screens*/
+
+@media (min-width: 1450px){
+  body{background-image: url('../images/background_else.png');}
+}
+
+/* mobile layout*/
+
+@media 
+    (max-width: 375px)  {
+   
+      body {
+      background-image: url('../images/background_width_375px.png');
+    }
+
+    .carousel-control-prev{
+      top: 46%;
+      left:40%;
+      width: 39px;
+      height: 40px;
+    }
+
+    .carousel-control-next{
+      top: 46%;
+      right: 40%;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .carousel-caption{
+      width: 80%;
+      position: relative;
+      margin-top: 20%;
+      margin-left: 10%;
+      height: 35vh; 
+      font-family: 'Inter', sans-serif;
+    }
+
+    .maintext{
+      font-size: 17px;
+      font-weight: 300;
+      color: hsl(240, 38%, 20%);
+      text-align: center;
+    }
+    
+    .nameofperson{
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    
+    .occupation{
+      font-size: 15px;
+      color: hsl(240, 18%, 77%);
+      font-weight: 500;
+    }
+    .tanya {
+      content: '';
+      width: 252px;
+      height: 253px;
+      display: block;
+      background-image: url('../images/tanya-small.png');
+      border-radius: 5px; 
+      position: relative;
+      margin-left: 16%;
+      margin-top: 20%;
+    }
+
+    .john {
+      content: '';
+      width: 252px;
+      height: 253px;
+      display: block;
+      background-image: url('../images/john-small.png');
+      border-radius: 5px;
+      position: relative;
+      margin-left: 16%;
+      margin-top: 20%;
+    }
+  }
